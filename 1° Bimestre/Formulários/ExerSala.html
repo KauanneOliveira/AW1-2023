@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+</head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Questionário</legend>
+
+                <fieldset>
+                  
+                    <legend>Cadastro</legend>
+
+                    <label for="email">E-mail:</label>
+                    <input id="email" type="email" name="email"/> <!-- type é o tipo que vai ser a caixa de entrada -->
+                    <br> 
+                    <br>   
+                    <label for="senha">Senha:</label>
+                    <input id= "senha" type="password" name="senha"/>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Dados Pessoais</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input id= "nome" type="text" name="nome"/> <!-- type é o tipo que vai ser a caixa de entrada -->
+                    <br> 
+                    <br>   
+                    <label for="idade">Idade:</label>
+                    <input id= "idade" type="number" name="idade"/>
+                    <br> 
+                    <br>   
+                    <label for="telefone">Telefone:</label>
+                    <input id= "telefone" type="tel" name="telefone"/>
+                    <br> 
+                    <br>   
+                    <label for="dataNascimento">Data de nascimento:</label>
+                    <input id= "dataNascimento" type="date" name="dataNascimento"/>
+                    <br> 
+                    <br>   
+                    <label for="genero">Gênero:</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino"/> <!-- name vai ser passado dps pelo post e value vai ser a resposta do usuário -->
+                    <label for="feminino">Feminino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino"/> 
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="outros" name="genero" value="outros"/> 
+                    <label for="outros">Outros</label>
+                    <input type="radio" id="pnr" name="genero" value="pnr"/> 
+                    <label for="pnr">Prefiro não responder</label>
+               
+                </fieldset>
+
+                <fieldset>
+                  
+                    <legend>Preferência</legend>
+                    
+                    <label for="marca">Marca de celular que você usa:</label>
+                    <select id="marca" name="marca">
+                        <option value="samsung">Samsung</option>
+                        <option value="iphone">Iphone</option>
+                        <option value="xiaomi">Xiaomi</option>
+                        <option value="motorola">Motorola</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="navegador">Escolha um navegador que você usa</label>
+                    <input type="text" id="navegador" name="navegador" list="navegadores"/>
+                    <datalist id="navegadores">
+                        <option value="Google">
+                        <option value="Safari">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                    </datalist>
+                    <br>
+                    <br>
+                    <label for="musica">Escolha os ritmos músicais que você escuta:</label>
+                    <input type="checkbox" id="rock" name="musica" value="rock"/>
+                    <label for="rock">Rock</label>
+                    <input type="checkbox" id="pop" name="musica" value="pop"/>
+                    <label for="pop">Pop</label>
+                    <input type="checkbox" id="funk" name="musica" value="funk"/>
+                    <label for="funk">Funk</label>
+                    <input type="checkbox" id="mpb" name="musica" value="mpb"/>
+                    <label for="mpb">MPB</label>
+                    <input type="checkbox" id="sertanejo" name="musica" value="sertanejo"/>
+                    <label for="sertanejo">Sertanejo</label>
+                </fieldset>
+
+                <fieldset>
+
+                   <legend>Comentário</legend>
+
+                   <textarea placeholder="Digite um comentário!" id="comentario" name="comentario" rows="4" cols="50"></textarea>
+
+                </fieldset>
+
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>   
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+</head>
+<body>
+    <table style="border: 1px solid black; border-collapse: collapse;"> <!--sintaxe da linha da tabela: espessura, formato e cor--> <!--tag de tabela--> 
+        <caption>Tabela</caption>
+        <thead>
+            <tr>         <!--tag da linha da tabela. Isso fará q oq esteja dentro dessa tabela, fiquem na msm linha-->
+                <th style="border: 1px solid black;">Nome</th>  <!--tag do cabeçalho da tabela--> 
+                <th style="border: 1px solid black;">Idade</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" style="border: 1px solid black;">João</td> <!--tag da célula da tabela--> <!-- rowspan mescla linha, nesse caso ta mesclando 2 linha-->
+                <td style="border: 1px solid black;">25</td>
+            </tr>
+            <tr>
+                <!-- <td style="border: 1px solid black;">Maria</td> -->
+                <td style="border: 1px solid black;">24</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="2" style="border: 1px solid black;">Final</td> <!-- colspan mescla coluna, nesse caso ta mesclando 2 colunas-->
+        </tfoot>
+    </table>
+</body>
+</html>
