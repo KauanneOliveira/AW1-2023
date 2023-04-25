@@ -1,0 +1,58 @@
+.header{
+    background-color: red;
+    display:block;
+    text-align: center; /*alinha o texto no meio do bloco*/
+    width: 100%;
+    padding: 20px;
+}
+
+
+.linha{
+    border: 1px solid blue;
+    color: blue;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;   /* é o tamanho do display, já deixa centralizado*/
+}
+
+.botao{
+    background-color: green;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.container{
+    margin-top: 10px;
+    display: flex; 
+    background-color: red;
+    padding: 30px;
+}
+
+.item{
+    margin-left: 10px;
+    flex: 1;
+    background-color: blue;
+    padding: 18px;
+}
+
+.item2{
+    margin-left: 10px;
+    flex: 2;
+    background-color: blue;
+    padding: 18px;
+}
+
+.grid-container{
+    display: grid;
+    background-color: blueviolet;
+    grid-template-columns: repeat(3, 500px);  /* define coluna (tanto de itens na coluna, tamanho da coluna) */
+    grid-template-rows: repeat(3, 100px);   /* define linha (tanto de itens na linha, tamanho da linha) */
+}
+
+.grid-item{
+    background-color: red;
+    margin-top: 20px;
+}
+
