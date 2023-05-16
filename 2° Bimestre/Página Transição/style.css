@@ -1,0 +1,198 @@
+/*Gradiente*/
+.body{
+	font-family: sans-serif;
+	/*Máxima Compatibilidade*/
+	background: rgb(102,0,0);
+	background: -moz-linear-gradient(90deg, rgba(102,0,0,1) 0%, rgba(204,17,0,1) 50%, rgba(255,0,0,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(102,0,0,1) 0%, rgba(204,17,0,1) 50%, rgba(255,0,0,1) 100%);
+	background: linear-gradient(90deg, rgba(102,0,0,1) 0%, rgba(204,17,0,1) 50%, rgba(255,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#660000",endColorstr="#ff0000",GradientType=1);
+	width: 100%;
+	color: white;
+}
+
+.imgSite{
+	display: inline-block; 
+	vertical-align: middle; 
+	text-align: center;	
+}
+
+/*Transição e Transformação*/
+.imgPagina:hover{
+	transform: scale(1.2);
+	transition: all 0.5s ease;
+}
+
+.nomeSite{
+	display: inline-block; 
+	vertical-align: middle;
+	text-align: left;
+}
+
+.nomeSite > h1{
+	font-family: Bradley Hand, cursive; /*Apple Chancery, cursive*/
+	font-size: 50px;
+}
+
+/*Gradiente*/
+.tituloPagina{
+	background: linear-gradient(to right, #88888a, #ffffff, #c9c2c2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.borda{
+	border: 4px solid transparent;
+	border-image: linear-gradient(to right,  #c9c2c2, #88888a)1;
+}
+
+.titulo{
+	font-size: 25px;
+	text-align: center;
+}
+
+.nomeSerial{
+	font-size: 25x;
+	color: red;
+}
+
+.conteudo{
+	font-size: 22px;
+}
+
+.img{ 
+	transition: all 0.3s ease;
+	opacity: 0.5; /*deixa a imagem mais clara*/
+}
+
+/*Transição*/
+.img:hover{
+	opacity: 1; /*escurece a imagem*/
+}
+
+/*Transição*/
+.img:active{
+	border-radius:50%;
+}
+
+.section{
+	display: flex;
+}
+
+.section2{
+	display: inline-block;
+	width: 70%;
+}
+.section3{
+	display: inline-block;
+	width: 30%;
+}
+
+/*Gradiente*/
+.aside{
+	display: inline-block;
+	width: 30%;
+	background: rgb(244,0,0);
+	background: -moz-linear-gradient(225deg, rgba(244,0,0,1) 0%, rgba(255,78,63,1) 74%, rgba(244,151,139,1) 100%);
+	background: -webkit-linear-gradient(225deg, rgba(244,0,0,1) 0%, rgba(255,78,63,1) 74%, rgba(244,151,139,1) 100%);
+	background: linear-gradient(225deg, rgba(244,0,0,1) 0%, rgba(255,78,63,1) 74%, rgba(244,151,139,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f40000",endColorstr="#f4978b",GradientType=1);
+}
+
+/*Transição*/
+.link:active{
+	color: black;
+}
+
+/*Gradiente*/
+.tabela{
+	width: 100%;
+	background: rgb(255,0,0);
+	background: -moz-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(244,0,0,1) 50%, rgba(244,151,139,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(244,0,0,1) 50%, rgba(244,151,139,1) 100%);
+	background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(244,0,0,1) 50%, rgba(244,151,139,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#f4978b",GradientType=1);
+}
+
+/*FINCIONA BUGADO*/
+/*.bordaTabela{
+	border-collapse: collapse;
+	border: 4px solid transparent;
+	border-image: linear-gradient(to right,  #c9c2c2, #88888a)1;
+}*/
+
+.celula{
+	text-align: right;
+}
+
+/*Gradiente*/
+.formulario{
+	background: rgb(255,0,0);
+	background: -moz-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(244,0,0,1) 50%, rgba(244,151,139,1) 100%);
+	background: -webkit-linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(244,0,0,1) 50%, rgba(244,151,139,1) 100%);
+	background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(244,0,0,1) 50%, rgba(244,151,139,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff0000",endColorstr="#f4978b",GradientType=1);
+}
+
+/*Transição*/   /*NÃO FINCIONA*/
+.selecionado:checked{
+	color: black;
+}
+
+.icons{
+	display: inline-block; 
+	margin-top: 5px;
+	margin-left: 50px;
+}
+
+.icon{
+	display: inline-block; 
+	margin-right: 30px;
+}
+
+/*Transição e Transformação*/
+.iconScale:hover{
+	transform: scale(2);
+	transition: all 0.5s ease;
+}
+
+/*Transformação*/
+.iconScale:active{
+	-webkit-transform: rotateZ(-30deg);
+	-ms-transform: rotateZ(-30deg);
+	transform: rotateZ(-30deg); /*rotateZ - diagonal*/
+}
+
+.anoAtualizacao{
+	display: inline-block;
+	margin-left: 20%;
+	font-size: 80%;
+}
+
+/*Transição*/ /*NÃO FINCIONA*/
+.btn {
+	padding: 1rem 2rem;
+	border-radius: 8px;
+	background: transparent;
+	border: 2px solid rgb(29, 163, 112);
+	font-size: 1.2rem;
+	color: rgb(195, 121, 94);
+	cursor: pointer;
+	position: relative;
+}
+
+.btn:before {
+	content: '';
+	position: absolute;
+	background: rgb(29, 163, 112);
+	width: 0;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all .5s ease;
+}
+
+.btn:hover:before {
+	width: 100%;
+}
