@@ -19,7 +19,7 @@
 	<body class="body">	
 		<header>
 			<section class="imgSite">
-				<div class="imgTransicao">   
+				<div class="imgPagina">   
 					<img style="margin: 90px;" src= "imgSite.jpg" width= "400" height= "200" alt="Imagem do Site" />
 				</div>
 			</section>
@@ -181,11 +181,11 @@
 					</section>
 				</aside>
 			</section>
-			
-			<table class="tabela"> 
-				<caption class="titulo">Vítimas de cada Serial Killer</caption>
 
-				<div class="bordaTabela"> <!--está dando erro, o gradiente não funciona direito-->
+			<div class="titulo">Vítimas de cada Serial Killer</div>
+			
+			<div class="bordaTabela">
+				<table class="tabela"> 
 					<thead class="conteudo">
 						<th>Serial Killer</th>
 						<th>Conhecido</th>
@@ -223,8 +223,8 @@
 							<td class="celula">180</td>
 						</tr>
 					</tbody>
-				</div>
-			</table>
+				</table>
+			</div>
 			
 			<br>
 			<br>
@@ -242,13 +242,14 @@
 						<br> 
 						<br>
 						<label for="serialFaltou">Cite um Serial Killer que faltou nessa lista:</label>
-							<input id= "serialFaltou" type="text" name="serialFaltou"/>
+							<br>
+							<textarea id= "serialFaltou"  name="serialFaltou" rows="1" cols="40" placeholder="Escreva aqui"></textarea>
 						<br> 
 						<br>   
 						<label for="serialKillerConhecido">Quais Serial Killers você já conhecia:</label>
 						<br> <!--classe selecioado não quer funcionar-->
-						<input class="selecionado"  type="checkbox" id="luisGaravito" name="serialKillerConhecido" value="luisGaravito"/>
-						<label class="selecionado"  for="luisGaravito">Luis Garavito</label>
+						<input type="checkbox" id="luisGaravito" name="serialKillerConhecido" value="luisGaravito"/>
+						<label class="selecionado" for="luisGaravito">Luis Garavito</label>
 						<input type="checkbox" id="pedroLópez" name="serialKillerConhecido" value="pedroLópez"/>
 						<label for="pedroLópez">Pedro López</label>
 						<input type="checkbox" id="javedIqbal" name="serialKillerConhecido" value="javedIqbal"/>
@@ -290,14 +291,15 @@
 						<br> 
 						<br>
 						<label for="sugestao">Sugestões:</label>
-							<input id= "sugestao" type="text" name="sugestao"/>
+						<br>
+						<textarea id= "serialFaltou"  name="serialFaltou" rows="1" cols="40" placeholder="Escreva aqui"></textarea>
 						
 						<br>
 						<br>
 						
 						</section>
 							<button class="btn" type="reset">Reset</button>
-							<button class="btn	" type="submit">Submit</button>
+							<button class="btn" type="submit">Submit</button>
 						<section>
 					</section>
 				</fieldset>
