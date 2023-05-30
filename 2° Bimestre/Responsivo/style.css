@@ -118,7 +118,7 @@ body {
 		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); /* cubic-bezier() é uma função para indicar a curva que vai fazer na transição*/
 	}
 
-    /* # - é de id */
+   	/* # - é de id */
 	#menu-toggle:checked ~ .menu li {
 		border: 1px solid red;
 		height: 2.5em;
