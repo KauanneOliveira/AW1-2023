@@ -1,0 +1,141 @@
+main {
+	padding: 2rem;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+}
+
+* {
+	font-family: Arial, sans-serif;
+	box-sizing: border-box; /*O box-sizing com o valor border-box faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura*/
+}
+
+.top-nav {
+	display: flex;
+	flex-direction: row; /*a direção é em linha(um elemento do lado do outro)*/
+	align-items: center;
+	justify-content: space-between;  /*O primeiro item é deslocado para o início do eixo principal, o último é deslocado para o final do eixo principal e os demais são distribuídos uniformemente entre eles*/
+	background-color: #333;
+	color: #fff;
+	height: 5rem;
+	padding: 1em;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu > li {
+	margin: 1rem;
+	/*overflow é utilizado para tratar conteúdos que ultrapassam os limites de um elemento; hidden- O conteúdo excedido não ficará visível.*/
+	overflow: hidden;	 /*sem ele os itens da lista aparecem um em cima do outro quando o menu hamburgue aparece*/
+}
+
+.menu > li > a {
+	text-decoration: none; /*tira qualquer decoração de links, h1...h6, p etc.*/
+	color: #fff;
+}	
+
+/*por ser none não aparece*/
+.menu-button-container {
+	display: none;
+	height: 100%;
+	width: 3rem; 
+	cursor: pointer;
+	flex-direction: column; /*para o elemento ficar abaixo do outro*/
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-toggle {
+	display: none;
+}
+
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+	display: block;
+	background-color: #fff;
+	position: absolute;
+	height: 0.25rem; 
+	width: 2rem;
+	transition: all ease .2s;
+	border-radius: 2px;
+}
+
+.menu-button::before {
+	content: ''; 
+	margin-top: -8px;
+}
+
+.menu-button::after {
+	content: '';
+	margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+	margin-top: 0;
+	transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+	background: rgba(255, 255, 255, 0); /*transparente*/
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+	margin-top: 0;
+	transform: rotate(-45deg);
+}
+
+@media (max-width: 700px) {
+	.menu-button-container {
+		display: flex;
+	}
+
+	.menu {
+		position: absolute;
+		top: 0;
+		margin-top: 4rem;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu-toggle ~ .menu li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1); /* cubic-bezier() é uma função para indicar a curva que vai fazer na transição*/
+	}
+
+	#menu-toggle:checked ~ .menu li {
+		border: 1px solid #333;
+		height: 2.5em;
+		padding: 0.5em;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.menu > li {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0.5em 0; /*para cima e para baixo vai ter um espaçamento de 0.5rem da borda*/
+		width: 100%;
+		color: white;
+		background-color: #222;
+	}
+
+	.menu > li:not(:last-child) {
+		border-bottom: 1px solid #444;
+	}
+}
