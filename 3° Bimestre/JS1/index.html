@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JavaScript 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <script>
+
+        // Opções definir as variáveis:
+        // var - declara uma variável.
+        // let - declara uma variável local de escopo do bloco.
+        // const - declara uma constante de escopo de bloco.
+
+        var nome = "Kauanne"
+        var idade = "18 anos"
+        alert("Meu nome é " +nome+ "\nEu tenho " +idade)
+
+
+        // Métodos de conversão: 
+        // Number() - numeros; String() - frases ou qualquer coisa que esteja em "" ou '' ; Boolean() - true ou false
+        // parseFloat() , parseInt(), toString(), parseBoolean(), parseDouble()...
+
+        var n1 = parseFloat((prompt( "Digite um número:" ))) //outra forma de converter 
+        var n2 = Number(prompt( 'Digite um número:' ))
+        alert( "A soma dos números: " +( n1+n2 ) )
+
+        var n1 = prompt( "Digite um número:" ).toString() //outra forma de converter 
+        var n2 = String(prompt( 'Digite um número:' ))
+        alert( "Os numeros digitados foram: " +n1+ " e " +n2)
+
+        // Forma de escrever no documento
+        document.write("kakau é de mais <br><br>")
+
+
+        // Recebendo valores pelo prompt e exibindo no documento
+        var nome = String(prompt("Digite seu nome:"))
+        var idade = Number(prompt("Digite sua idade"))
+        
+        document.write("Nome: " +nome+ " <br> Idade: " +idade+ "<br>Tamanho do nome: " + nome.length+ " <br> nome em maiusculo: " +nome.toUpperCase()+ " <br> nome em minusculo: " +nome.toLocaleLowerCase())
+
+        var nome2 = String(prompt("Digite seu nome:"))
+        var idade2 = Number(prompt("Digite sua idade"))
+
+        document.write(`<br><br>Nome: ${nome2}  <br>Idade:  ${idade2} <br>Tamanho do nome:  ${nome2.length}  <br>nome em maiusculo:  ${nome2.toUpperCase()}  <br>nome em minusculo:  ${nome2.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>
