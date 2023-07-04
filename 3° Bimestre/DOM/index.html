@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="#">Inicío</a>
+        <a href="#">Todos os Jogos</a>
+        <a href="#">Ofertas</a>
+    </header>
+    <main>
+        <h1 id="tituloPrincipal">Loja Kakau</h1>
+        <h2 id="subTitulo">Bem Vindos a Seção Roupas</h2>
+
+        <section>
+            <table>
+                <thead name="cabecalhoTabela">
+                    <tr>
+                        <th>
+                            Produto
+                        </th>
+                        <th>
+                            Preço
+                        </th>
+                        <th>
+                            Quantidade
+                        </th>
+                        <th>
+                            Total
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Camiseta
+                        </td>
+                        <td>
+                            R$ 29,99
+                        </td>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            R$ 89,97
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Calça
+                        </td>
+                        <td>
+                            R$ 59,99
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            R$ 59,99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tênis
+                        </td>
+                        <td>
+                            R$ 99,99
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            R$ 199,98
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Meias
+                        </td>
+                        <td >
+                            R$ 9,99
+                        </td>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            R$ 39,96
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan = "3">
+                            Total
+                        </td>
+                        <td class="total">
+                            R$ 349,94
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer class="rodape">
+            <a href="#" name="link">Ajuda</a>
+            <a href="#" name="link">Termos e Condições</a>
+            <a href="#" name="link">Política de Privacidade</a>
+            <a href="#" name="link">Procedimento de Reclamações</a>
+            <h5>&copy 2023 - 2023</h5>
+    </footer>
+
+    <script>
+        document.getElementById("tituloPrincipal").style.display = "flex"
+        document.getElementById("tituloPrincipal").style.justifyContent = "left"
+        document.getElementById("tituloPrincipal").style.color = "#333"
+
+        
+        document.getElementsByClassName("rodape")[0].style.backgroundColor = "#f2f2f2"
+        document.getElementsByClassName("rodape")[0].style.paddingTop = "20px"
+
+
+        document.getElementsByName("link")[0].style.color = "#333"
+        document.getElementsByName("link")[1].style.color = "#333"
+        document.getElementsByName("link")[2].style.color = "#333"
+        document.getElementsByName("link")[3].style.color = "#333" 
+
+
+        document.getElementsByTagName("thead")[0].style.backgroundColor = "#333"
+        document.getElementsByTagName("thead")[0].style.color = "#fff"
+
+
+        document.querySelector("td.total").style.color = "#ff0000"
+        document.querySelector("td.total").style.fontSize = "large"
+
+
+        document.getElementById("subTitulo").style.display = "flex"
+        document.getElementById("subTitulo").style.justifyContent = "left"
+        document.getElementById("subTitulo").style.color = "#666"
+
+
+        document.getElementsByClassName("cabecalho")[0].style.backgroundColor = "#f2f2f2"
+        document.getElementsByClassName("cabecalho")[0].style.justifyContent = "left"
+
+
+        document.getElementsByName("cabecalhoTabela")[0].style.fontSize = "18px"
+        document.getElementsByName("cabecalhoTabela")[0].style.padding = "10px"
+
+
+        document.getElementsByTagName("h5")[0].style.fontSize = "12px" 
+        document.getElementsByTagName("h5")[0].style.color = "#666"
+
+
+        var td = document.querySelectorAll("td")
+        for( var i in td ){
+            td[i].style.backgroundColor = "#fff"
+        }
+        var cor = document.querySelectorAll("td")
+        for( var i in cor ){
+            cor[i].style.padding = "10px"
+        }
+    </script>
+</body>
+</html>
