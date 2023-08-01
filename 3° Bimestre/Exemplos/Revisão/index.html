@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+</head>
+<body>
+    <p  id="paragrafo"></p>
+    <script>
+        var nome = String(prompt( "Digite seu nome" ))
+        var idade = Number(prompt( "Digite sua idade" ))
+
+        // document.getElementsByTagName( "p" )[0].innerText = `Seu nome ${nome} e você tem ${idade} anos`
+
+        // document.getElementById( "paragrafo" ).style.display = "flex"
+        // document.getElementById( "paragrafo" ).style.justifyContent = "center"
+
+        // document.getElementById( "paragrafo" ).style.color = "red"
+
+        // document.getElementById( "paragrafo" ).style.fontSize = "100px"
+
+        var p = document.querySelector("#paragrafo")
+
+        p.innerText = `Seu nome ${nome} e você tem ${idade} anos`
+
+        p.style.display = "flex"
+
+        p.style.justifyContent = "center"
+
+        p.style.color = "blue"
+
+        p.style.fontSize = "50px"
+
+    </script>
+</body>
+</html>
