@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudar Cor</title>
+</head>
+<body>
+    <button>Click</button>
+    <button>Click</button>
+    <script>
+        //selecionando todos os botões e colocando no vetor btns
+        var btns = document.querySelectorAll("button");
+
+        //random pega um número aleatório entre 0 e 0,99...
+        function random(numero){
+            return Math.floor(Math.random() * (numero + 1));
+        }
+
+        function mudarCor(e){
+            var cor = `rgb(${random(255)},${random(255)},${random(255)})`
+            document.body.style.backgroundColor = cor
+            // o elemento target é usando quando vc quer manupular no objeto
+            e.target.style.backgroundColor = cor
+        }
+
+        function alerta(){
+            alert("mudou")
+        }
+ 
+        // btns é a variável a ser percorrida; btn é a váriavel que será usada para armazenar os valores do vetor em cada vez q ele trocar a posição, sem precisar usar uma variável para cada valor; a seta é uma indicação de que o seguinte código(ação) será usada naquela variável q foi criado(btn)
+        // em cada vez que passar por um valor vai ser atribuido o seguinte evento na variável btn 
+        btns.forEach(btn => btn.addEventListener("click", mudarCor))
+
+        //addEventListener("evento", função)
+        btns.forEach(btn => btn.addEventListener("click", alerta))
+        
+        // está removendo o evento de alerta no segundo botão
+        btns[1].removeEventListener("click", alerta)
+    </script>
+</body>
+</html>
