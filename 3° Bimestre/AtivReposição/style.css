@@ -1,0 +1,31 @@
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info h1,
+.info h3 > .direita {
+    margin-right: 400px;
+}
+
+
+h1 {
+    color: #ffffff;
+	display: inline;
+}
+
+table {
+    width: 100%;
+	border-collapse: collapse;	
+}
+
+th {
+	padding: 8px;
+    color: white;
+	text-align: left;
+}
+
+td {
+	border-bottom: 1px solid #ddd;
+}
