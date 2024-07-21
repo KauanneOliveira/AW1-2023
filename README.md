@@ -1,4 +1,4 @@
-<h1 align="center">AW1-2023</h1>
+<h1 align="center">HTML e CSS</h1>
 
 Repositório criado para armazenar os códigos feitos em HTML e CSS durante a disciplina de Aplicações para Web.
 
